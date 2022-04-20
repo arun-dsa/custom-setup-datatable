@@ -1,0 +1,55 @@
+{
+  "name": "react-data-table",
+  "version": "1.0.0",
+  "description": "DataTable with pagination and filter",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --hot --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arun-dsa/react-data-table.git"
+  },
+  "keywords": [
+    "datatable",
+    "gridview",
+    "table",
+    "pagination"
+  ],
+  "author": "Arun Dsa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arun-dsa/react-data-table/issues"
+  },
+  "homepage": "https://github.com/arun-dsa/react-data-table#readme",
+  "devDependencies": {
+    "@babel/core": "7.17.9",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-react": "7.16.7",
+    "babel-loader": "8.2.4",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
+    "css-loader": "6.7.1",
+    "file-loader": "6.2.0",
+    "html-webpack-plugin": "5.5.0",
+    "mini-css-extract-plugin": "2.6.0",
+    "path": "0.12.7",
+    "react-hot-loader": "4.13.0",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0",
+    "webpack": "5.72.0",
+    "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.8.1"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.2",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1"
+  }
+}

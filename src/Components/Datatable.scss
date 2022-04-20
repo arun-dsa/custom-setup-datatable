@@ -1,0 +1,119 @@
+.row {
+	margin: 0 !important;
+}
+#ppc-data-table {
+  tr {
+    &:hover {
+      background: #E4F3E4 !important;
+    }
+    td {
+      vertical-align: middle !important;
+    }
+    th {
+      vertical-align: middle !important;
+      background-color: #E8EDEE !important;
+      position: sticky !important;
+      top: -2px !important;
+      z-index: 5 !important;
+
+      .filter-btn {
+        position: absolute;
+        background-color: transparent;
+        top: 50%;
+        right: 0;
+        transform: translate(0%, -50%);
+        z-index: 6;
+        display: block;
+      }
+
+      .filter-dropdown {
+        position: absolute;
+        background-color: transparent;
+        top: 50% ;
+        right: 0;
+        width: 100% ;
+        min-width: 100%;
+        margin-top: 3rem ;
+        transform: translate(0%, -50%);
+        z-index: 8 ;
+        >.dropdown {
+          &::before {
+            content: '' !important;
+          }
+        }
+        >.visible.transition {
+          margin-top: -2rem !important;
+
+          .date-filter-input {
+            margin: 0.5rem auto;
+          }
+        }
+      }
+
+	  &.ascending::after {
+		content: '';
+		background-image: url(../icons/ascending.svg);
+	  }
+
+	  &.descending::after {
+		content: '';
+		background-image: url(../icons/descending.svg);
+	  }
+    }
+  }
+}
+
+#pagination-bar {
+	#page-limit {
+		height: 34px;
+    	width: 34px;
+		background-color: #03522D;
+		position: absolute;
+		top: 10px;
+
+		>i {
+			position: absolute;
+    		transform: translate(50%, 50%);
+			margin: 0;
+		}
+	}
+
+	#grid-pagination {
+		height: 34px;
+		border: 0;
+    	background: none;
+    	border-radius: 0;
+    	box-shadow: none;
+
+		>a {
+			width: 34px;
+			min-width: revert;
+			height: 34px;
+			border-radius: 0;
+			border: 0;
+			background-color: #F2F2F2;
+			margin-right: 5px;
+			box-sizing: border-box;
+			justify-content: center;
+		
+			&::before {
+				border: 0;
+				width:0;
+				background:none;
+			}
+
+			&.active {
+				background-color: #E6EEEA;
+				border: 1px solid #03522D;
+				color: #03522D
+			}
+		}
+	}
+}
+.action-btn {
+	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+	margin: 0 .2rem !important;
+}
+
+
+
